@@ -20,7 +20,7 @@ def main():
 
     print program_cp[0]
 
-    for noun in xrange(0,100):
+    for noun in xrange(0, 100):
         for verb in xrange(0, 100):
             program_cp = list(program)
 
@@ -44,8 +44,6 @@ def run_intcode(program, noun, verb):
         elif program[position] == 2:
             program[program[position + 3]] = program[program[position+1]] * program[program[position+2]]
         position += 4
-
-
 
 if __name__ == "__main__":
     main()
